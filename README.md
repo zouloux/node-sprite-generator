@@ -1,3 +1,9 @@
+# FORK
+
+This fork removed dependencies with canvas and gm. Only pure node packaging is kept with jimp. This is lighter and remove dependencies to non-node softwares.
+
+
+
 # node-sprite-generator
 
 [![NPM Version](https://img.shields.io/npm/v/node-sprite-generator.svg?style=flat-square)](https://www.npmjs.org/package/node-sprite-generator)
