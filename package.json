@@ -12,10 +12,6 @@
         "ramda": "0.22.0",
         "underscore": "1.8.3"
     },
-    "optionalDependencies": {
-        "canvas": "1.6.3",
-        "gm": "1.23.0"
-    },
     "devDependencies": {
         "chai": "3.5.0",
         "chai-as-promised": "6.0.0",
