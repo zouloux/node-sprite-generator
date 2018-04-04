@@ -1,2 +1,0 @@
-<% layout.images.forEach(function (image) { %>.<%= image.className %> { background-image: url('<%= options.spritePath %>'); <% if (options.pixelRatio !== 1) { %>background-size: <%= getCSSValue(layout.width) %> <%= getCSSValue(layout.height) %>; <% } %>background-position: <%= getCSSValue(-image.x) %> <%= getCSSValue(-image.y) %>; width: <%= getCSSValue(image.width) %>; height: <%= getCSSValue(image.height) %>; }
-<% }); %>

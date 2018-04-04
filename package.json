@@ -1,7 +1,7 @@
 {
     "name": "@zouloux/node-sprite-generator",
-    "version": "0.10.2",
-    "description": "Generates image sprites and their spritesheets (css, stylus, sass, scss or less) from sets of images. Supports retina sprites. Provides express middleware and grunt task.",
+    "version": "0.11.0",
+    "description": "Generates image sprites and their spritesheets (css, stylus, sass, scss or less) from sets of images. Supports retina sprites.",
     "main": "lib/nsg.js",
     "dependencies": {
         "bin-pack": "1.0.2",
@@ -12,43 +12,16 @@
         "ramda": "0.22.0",
         "underscore": "1.8.3"
     },
-    "devDependencies": {
-        "chai": "3.5.0",
-        "chai-as-promised": "6.0.0",
-        "eslint": "2.13.1",
-        "istanbul": "0.4.5",
-        "mocha": "3.2.0",
-        "node-resemble-v2": "1.0.0",
-        "proxyquire": "1.7.11",
-        "sinon": "1.17.7",
-        "sinon-as-promised": "4.0.2",
-        "sinon-chai": "2.8.0",
-        "coveralls": "2.11.16"
-    },
-    "scripts": {
-        "lint": "eslint .",
-        "unit-test": "istanbul test _mocha test -- --recursive --reporter spec",
-        "coverage": "npm run unit-test --coverage && npm run report-coverage-html",
-        "report-coverage-html": "istanbul report --dir  build/coverage html",
-        "test": "npm run lint && npm run coverage",
-        "coveralls": "cat ./build/coverage/lcov.info | coveralls"
-    },
     "keywords": [
         "sprite",
         "sprites",
         "generator",
-        "middleware",
         "css",
-        "stylus",
-        "less",
-        "sass",
-        "scss",
-        "grunt",
         "retina"
     ],
     "repository": {
         "type": "git",
-        "url": "git://github.com/selaux/node-sprite-generator"
+        "url": "git://github.com/zouloux/node-sprite-generator"
     },
     "license": "MIT"
 }
