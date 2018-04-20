@@ -31,9 +31,10 @@ nsg({
         'images/sprite/*.png'
     ],
     spritePath: 'images/sprite.png',
-    stylesheet: (generatedLayout) =>
+    render: (generatedLayout, spriteBuffer) =>
     {
         // ... generate stylesheet file here
+        // ... write PNG file from spriteBuffer
     }
 }, function (err) {
     console.log('Sprite generated!');
@@ -55,9 +56,9 @@ Type: `String`
 Default value: `''`  
 The path your image sprite will be written to. ATM we only support the PNG format for the image sprite.
 
-#### options.stylesheet
+#### options.render
 Type: `Function`
-Specifies a custom stylesheet (see more at [extending node-sprite-generator](https://github.com/selaux/node-sprite-generator#extending-node-sprite-generator)).
+Method to write stylesheet data and sprite files.
 
 #### options.layout
 Type: `String|Function`
@@ -98,9 +99,10 @@ nsg({
     layoutOptions: {
         padding: 30
     },
-    stylesheet: (generatedLayout) =>
+    render: (generatedLayout, spriteBuffer) =>
     {
         // ... generate stylesheet file here
+        // ... write PNG file from spriteBuffer
     }
 });
 ```
@@ -114,7 +116,7 @@ The internal pipeline for node-sprite-generator is
  - ```compositor.readImages(files, callback)``` -> ```callback(error, images)```
  - ```layout(images, options, callback)``` -> ```callback(error, layout)```
  - ```compositor.render(layout, spritePath, options, callback)``` -> ```callback(error)```
- - ```stylesheet(layout, options)``` -> ```callback(error)```
+ - ```render(layout, spriteBuffer, options)``` -> ```callback(error)```
 
 The used data formats are:
 
