@@ -77,6 +77,7 @@ Default value: `{}`
 Options that will be passed on to the layout generation. The built-in layouters support the following options.  
 __padding__ (Type: `Integer` Default: `0`): Specifies the padding between the images in the layout.  
 __scaling__ (Type: `Number` Default: `1`): Specifies the factor that the images are scaled with in the layout. This allows generating multiple, scaled versions of the same sprites using a single image set.  
+__powerOfTwo__ (Type: `Boolean` Default: `false`) : Force power of two dimensions for GPU optimisation, like 256px by 1024px so Three.js does not resize badly textures by example.
 
 #### options.compositorOptions
 Type: `Object`

@@ -1,6 +1,6 @@
 {
     "name": "@zouloux/node-sprite-generator",
-    "version": "0.12.0",
+    "version": "0.12.1",
     "description": "Generates image sprites and their spritesheets (css, stylus, sass, scss or less) from sets of images. Supports retina sprites.",
     "main": "lib/nsg.js",
     "dependencies": {
